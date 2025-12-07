@@ -343,7 +343,6 @@ const InterviewPortal = () => {
         management: userData.management,
       };
 
-      // promote → +1
       updatedLevels[domain] = updatedLevels[domain] + 1;
 
       const response = await axios.put(
@@ -377,7 +376,7 @@ const InterviewPortal = () => {
         management: userData.management,
       };
 
-      updatedLevels[domain] = 0; // rejected -> back to 0
+      updatedLevels[domain] = 0; 
 
       const response = await axios.put(
         `${process.env.REACT_APP_BASE_URL}/admin/updatestatus/${userData._id}`,
