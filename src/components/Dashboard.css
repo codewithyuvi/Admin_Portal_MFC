@@ -618,3 +618,33 @@ body {
 .question-header.portfolio-header {
   display: block;
 }
+
+.round-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: white;
+  border: none;
+  background: rgb(29, 189, 252);
+}
+
+.promote-btn {
+  background: #4caf50;
+}
+
+.promote-btn:disabled {
+  background: #a5d6a7;
+  cursor: not-allowed;
+}
+
+
+.reject-btn {
+  background: #f44336;
+}
+
+.reject-btn:disabled {
+  background: #ef9a9a;
+  cursor: not-allowed;
+}

@@ -313,6 +313,7 @@ const InterviewPortal = () => {
               <p>Current Level: {userData[domainTask.domain]}</p>
 
               <button
+              className="round-btn promote-btn"
                 onClick={() => handleAcceptRounds(domainTask.domain)}
                 disabled={userData[domainTask.domain] >= 3}
               >
@@ -320,6 +321,7 @@ const InterviewPortal = () => {
               </button>
 
               <button
+              className="round-btn reject-btn"
                 onClick={() => handleRejectRounds(domainTask.domain)}
                 disabled={userData[domainTask.domain] === 0}
               >
@@ -467,7 +469,7 @@ const InterviewPortal = () => {
         </div>
 
         {!authenticated && (
-          <button type="button" onClick={() => navigate("/login")}>
+          <button className="round-btn" type="button" onClick={() => navigate("/login")}>
             Login
           </button>
         )}
